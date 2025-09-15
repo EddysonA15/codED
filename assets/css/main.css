@@ -1307,48 +1307,48 @@ section,
   overflow: hidden;
 }
 
-.references .testimonial-item .testimonial-content {
+.references .references-item .references-content {
   border-left: 3px solid var(--accent-color);
   padding-left: 30px;
 }
 
-.references .testimonial-item .testimonial-img {
+.references .references-item .references-img {
   border-radius: 50%;
   border: 4px solid var(--background-color);
   margin: 0 auto;
 }
 
-.references .testimonial-item h3 {
+.references .references-item h3 {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
 }
 
-.references .testimonial-item h4 {
+.references .references-item h4 {
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin: 0 0 10px 0;
 }
 
-.references .testimonial-item .stars i {
+.references .references-item .stars i {
   color: #ffc107;
   margin: 0 1px;
 }
 
-.references .testimonial-item .quote-icon-left,
-.references .testimonial-item .quote-icon-right {
+.references .references-item .quote-icon-left,
+.references .references-item .quote-icon-right {
   color: color-mix(in srgb, var(--accent-color), transparent 50%);
   font-size: 26px;
   line-height: 0;
 }
 
-.references .testimonial-item .quote-icon-left {
+.references .references-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.references .testimonial-item .quote-icon-right {
+.references .references-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -1356,7 +1356,7 @@ section,
   transform: scale(-1, -1);
 }
 
-.references .testimonial-item p {
+.references .references-item p {
   font-style: italic;
 }
 
