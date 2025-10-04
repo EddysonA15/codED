@@ -1,4 +1,0 @@
-- [ ] Edit about.html: replace stats section content with image-scroll-container containing portfolio images.
-- [ ] Edit assets/css/main.css: add styles for .image-scroll-container, .image-scroll, img, and update media queries.
-- [ ] Edit assets/js/main.js: add auto-scroll function with 5s inactivity timer.
-- [ ] Test the page to ensure auto-scroll works.
