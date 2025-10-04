@@ -655,6 +655,14 @@ section,
   }
 }
 
+@media (max-width: 575px) {
+  section,
+  .section {
+    padding: 40px 0;
+    scroll-margin-top: 60px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
@@ -1365,24 +1373,13 @@ section,
   .stats .row {
     text-align: center;
   }
-
   .stats .avatars {
     justify-content: center;
     margin-bottom: 40px;
   }
-
-  .stats .counters h2 {
-    font-size: 36px;
-  }
-
-  .stats .counters p {
-    font-size: 16px;
-  }
-
   .stats .counters .col-md-4 {
     margin-bottom: 30px;
   }
-
   .stats .counters .col-md-4:last-child {
     margin-bottom: 0;
   }
@@ -2944,4 +2941,348 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/*--------------------------------------------------------------
+# Enhanced Media Queries for All Screen Sizes
+--------------------------------------------------------------*/
+
+/* Touch-friendly interactions for mobile devices */
+@media (max-width: 767.98px) {
+  button,
+  .btn,
+  .hero .hero-actions .btn,
+  .contact .contact-form .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  a,
+  .hero .social-links a,
+  .footer .social-links a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Extra small screens (<576px) enhancements */
+@media (max-width: 575.98px) {
+  .hero .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero .hero-content h2 {
+    font-size: 1.125rem;
+  }
+
+  .hero .hero-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero .hero-actions .btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  .hero .social-links {
+    justify-content: center;
+  }
+
+  .about .intro-content .headline {
+    font-size: clamp(24px, 5vw, 36px);
+  }
+
+  .about .intro-content .lead {
+    font-size: 16px;
+  }
+
+  .about .intro-content .cta-group {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .about .skill-item {
+    padding: 20px;
+  }
+
+  .about .skill-item h3 {
+    font-size: 14px;
+  }
+
+  .about .skill-item p {
+    font-size: 13px;
+  }
+
+  .services .service-item {
+    padding: 1.25rem;
+  }
+
+  .services .service-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .services .service-icon i {
+    font-size: 1.25rem;
+  }
+
+  .services .service-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .portfolio .portfolio-card .portfolio-info {
+    padding: 15px;
+  }
+
+  .portfolio .portfolio-card .portfolio-info h4 {
+    font-size: 1.1rem;
+  }
+
+  .contact .info-box,
+  .contact .contact-form {
+    padding: 1.25rem;
+  }
+
+  .contact .info-box h3,
+  .contact .contact-form h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Stats section */
+  .stats .counters h2 {
+    font-size: 32px;
+  }
+
+  .stats .counters p {
+    font-size: 14px;
+  }
+
+  .stats .counters .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  .stats .avatars {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .stats .avatars img {
+    width: 50px;
+    height: 50px;
+    margin: 0 -6px;
+  }
+
+  /* References section */
+  .references .references-item .references-content {
+    padding-left: 20px;
+  }
+
+  .references .references-item h3 {
+    font-size: 18px;
+  }
+
+  .references .references-item h4 {
+    font-size: 12px;
+  }
+
+  .references .references-item p {
+    font-size: 13px;
+  }
+
+  /* Resume section */
+  .resume .resume-item .resume-title {
+    font-size: 1.5rem;
+  }
+
+  .resume .resume-item article h4 {
+    font-size: 1.1rem;
+  }
+
+  .resume .resume-item article h5 {
+    font-size: 0.9rem;
+  }
+
+  .resume .resume-item article .institution,
+  .resume .resume-item article .company {
+    font-size: 0.9rem;
+  }
+
+  .resume .resume-item article p {
+    font-size: 13px;
+  }
+
+  .resume .skill-item h4 {
+    font-size: 0.9rem;
+  }
+
+  /* Portfolio details */
+  .portfolio-details .portfolio-details-content .project-title {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-details .portfolio-details-content .project-overview .lead {
+    font-size: 1rem;
+  }
+
+  .portfolio-details .portfolio-details-media .main-image img {
+    height: 200px;
+  }
+
+  /* Service details */
+  .service-details .service-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .service-details .service-hero .service-description {
+    font-size: 1.1rem;
+  }
+
+  .service-details .service-visual img {
+    height: 200px;
+  }
+}
+
+/* Medium-large screens (1200px-1399px) adjustments */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .hero .hero-content h1 {
+    font-size: 3rem;
+  }
+  .about .intro-content .headline {
+    font-size: clamp(32px, 3.5vw, 40px);
+  }
+  .services .service-item {
+    padding: 2.25rem;
+  }
+  .portfolio .portfolio-card {
+    margin-bottom: 25px;
+  }
+  .contact .info-box,
+  .contact .contact-form {
+    padding: 3.5rem;
+  }
+  .portfolio-details .portfolio-details-content .project-title {
+    font-size: 2rem;
+  }
+  .service-details .service-hero h1 {
+    font-size: 3.2rem;
+  }
+}
+
+/* Large screens (>1400px) to prevent content from becoming too wide */
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-xl {
+    max-width: 1320px;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero .hero-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .about .intro-content .headline {
+    font-size: clamp(36px, 3vw, 48px);
+  }
+
+  .section-title h2 {
+    font-size: 4rem;
+  }
+
+  .services .service-item {
+    padding: 2.5rem;
+  }
+
+  .portfolio .portfolio-card .portfolio-info h4 {
+    font-size: 1.3rem;
+  }
+
+  .contact .info-box,
+  .contact .contact-form {
+    padding: 4rem;
+  }
+
+  .contact .info-box h3,
+  .contact .contact-form h3 {
+    font-size: 2.25rem;
+  }
+}
+
+/* High-DPI screens for sharper images */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero .hero-image .image-wrapper img,
+  .about .profile-figure .profile-photo,
+  .portfolio .portfolio-card .portfolio-img img,
+  .portfolio-details .portfolio-details-media .main-image img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Additional typography scaling with clamp for fluidity */
+.section-title h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.hero .hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.hero .hero-content h2 {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+}
+
+.about .intro-content .headline {
+  font-size: clamp(28px, 4vw, 44px);
+}
+
+.about .intro-content .lead {
+  font-size: clamp(16px, 2vw, 18px);
+}
+
+.services .service-content h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+}
+
+.portfolio .portfolio-card .portfolio-info h4 {
+  font-size: clamp(1.1rem, 2vw, 1.2rem);
+}
+
+.contact .info-box h3,
+.contact .contact-form h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+.stats .counters h2 {
+  font-size: clamp(32px, 4vw, 48px);
+}
+.stats .counters p {
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+.references .references-item h3 {
+  font-size: clamp(18px, 2vw, 20px);
+}
+.references .references-item h4 {
+  font-size: clamp(12px, 1vw, 14px);
+}
+.references .references-item p {
+  font-size: clamp(13px, 1.5vw, 16px);
+}
+.resume .resume-item .resume-title {
+  font-size: clamp(1.5rem, 3vw, 1.75rem);
+}
+.resume .resume-item article h4 {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+}
+.resume .resume-item article h5 {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+.resume .resume-item article p {
+  font-size: clamp(13px, 1.5vw, 16px);
+}
+.resume .skill-item h4 {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
