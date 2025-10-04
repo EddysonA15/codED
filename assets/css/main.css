@@ -1180,51 +1180,14 @@ section,
   }
 }
 
-/* Scroll Container for Skills */
-.skill-scroll-container {
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 10px;
-}
-
-.skill-scroll-container::-webkit-scrollbar {
-  height: 8px;
-}
-
-.skill-scroll-container::-webkit-scrollbar-track {
-  background: var(--surface-color);
-}
-
-.skill-scroll-container::-webkit-scrollbar-thumb {
-  background: var(--accent-color);
-  border-radius: 4px;
-}
-
-.skill-scroll-container::-webkit-scrollbar-thumb:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-}
-
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .skills-animation {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 1rem;
-}
-
 .skills .skill-box {
   background-color: var(--surface-color);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  min-width: 250px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skills .skill-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .skills .skill-box h3 {
@@ -1254,27 +1217,6 @@ section,
   border-radius: 50px;
   transition: 0.9s;
   width: 1px;
-}
-
-/* Responsive: Revert to grid on smaller screens */
-@media (max-width: 767.98px) {
-  .skill-scroll-container {
-    overflow-x: visible;
-  }
-
-  .skills .skills-animation {
-    display: block;
-  }
-
-  .skills .skills-animation .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  .skills .skills-animation .col-lg-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
 }
 
 /*--------------------------------------------------------------
