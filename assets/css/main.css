@@ -1185,8 +1185,6 @@ section,
   overflow-x: auto;
   scroll-behavior: smooth;
   padding-bottom: 10px;
-  scrollbar-width: thin;
-  scrollbar-color: var(--accent-color) var(--surface-color);
 }
 
 .skill-scroll-container::-webkit-scrollbar {
@@ -1211,8 +1209,6 @@ section,
   overflow-x: auto;
   scroll-behavior: smooth;
   padding-bottom: 10px;
-  scrollbar-width: thin;
-  scrollbar-color: var(--accent-color) var(--surface-color);
 }
 
 .image-scroll-container::-webkit-scrollbar {

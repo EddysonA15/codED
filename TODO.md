@@ -1,5 +1,4 @@
-- [ ] Edit assets/css/main.css: add scrollbar styles for all browsers to .skill-scroll-container and .image-scroll-container.
-- [ ] Edit assets/css/main.css: remove overflow-x: visible override in media query for .skill-scroll-container.
-- [ ] Edit assets/css/main.css: change .skills .skills-animation in media query to display: flex, flex-wrap: nowrap, remove col class overrides.
-- [ ] Edit assets/css/main.css: adjust min-width of .skill-box in media query for better mobile UX.
-- [ ] Test the page to ensure scroll works on all devices.
+- [ ] Edit about.html: replace stats section content with image-scroll-container containing portfolio images.
+- [ ] Edit assets/css/main.css: add styles for .image-scroll-container, .image-scroll, img, and update media queries.
+- [ ] Edit assets/js/main.js: add auto-scroll function with 5s inactivity timer.
+- [ ] Test the page to ensure auto-scroll works.
